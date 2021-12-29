@@ -1,0 +1,1089 @@
+
+<head>
+<meta	charset="utf-8">
+<!--w3school-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--w3school-->
+
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<style>
+body{
+background:black;
+}
+</style>
+
+<!--bootstrap-->
+				
+</head>
+<!--container-->
+<div class="w3-cell-row"style="direction:rtl;text-align:center;">
+
+  <div class="w3-container w3-pale-red w3-cell " >
+     <a class="w3-card-4"  href="http://192.168.0.110:8090/"><img src="img/conect.jpg"style="width:60px;"></a>
+  </div>
+
+  <div class="w3-container w3-teal w3-cell"style="margin:0 100;">
+    <a	href="#"class="w3-container w3-teal w3-cell"onclick="document.getElementById('tbl-work').style.display='block'">میز کار</a>
+  </div>
+  <div class="w3-container w3-teal w3-cell"onclick="document.getElementById('expert').style.display='block'">
+     <a	href="#"class="w3-row w3-teal w3-cell">کارشناسان</a>
+  </div>
+ <div class="w3-container w3-teal w3-cell"onclick="document.getElementById('conecfrinds').style.display='block'">
+     <a	href="#"class="w3-row w3-teal w3-cell">ارتباط با  همکاران</a>
+  </div>
+ 
+  <div class="w3-container w3-teal w3-cell">
+    <a href="https://www.google.com/maps/@35.7698991,51.4126028,321m/data=!3m1!1e3"class="w3-container  w3-cell"> <img src="img-container/earth.png"style="height:50px;	width:100px;"></a>
+	 <a href="https://www.google.com/search?q=%D9%85%D8%AA%D8%B1%D8%AC%D9%85+%DA%AF%D9%88%DA%AF%D9%84&rlz=1C1GCEA_enIR860IR860&oq=%D9%85%D8%AA%D8%B1%D8%AC%D9%85&aqs=chrome.0.69i59j69i57j35i39j0i433i512j0i131i433i512l3j0i433i512j0i512l2.2399j0j4&sourceid=chrome&ie=UTF-8"class="w3-container  w3-cell"> <img src="img-container/translt.jpg"style="height:50px;	width:100px;"></a>
+	
+  </div>
+
+ <div class="w3-container w3-black w3-cell">
+		<!--offcanvas-->
+		
+			<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasright" aria-controls="offcanvasright">سایتها</button>
+
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+			  <div class="offcanvas-header">
+				<h5 id="offcanvasRightLabel">بیمه،مالیات،بانکها</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			  </div>
+			  <div class="offcanvas-body">
+				<ul class="w3-pale-red">
+					<a href=" # "> سازمان امور مالیاتی کشور </a>
+					
+				</ul>
+					<ul class="w3-pale-blue">
+					
+					<a href=" # "> سازمان تامین اجتماعی </a>
+					<a href=" # ">سامانه یکپارچه سازمان تامین اجتماعی </a>
+					<a href=" # "> کارتابل بیمه و دریافت سابقه </a>
+					
+					
+				</ul>
+					<ul class="w3-pale-green">
+					
+					<a href=" # "> سامانه چک صیادی </a>
+					
+					
+				</ul>
+					<ul class="w3-pale-green">
+					
+					<a href=" # "> بانک مرکزی جمهوری اسلامی ایران - نرخ ارز بازار </a>
+					<a href=" # "> طلا سکه ارز </a>
+					<a href=" # "> بانک مرکزی جمهوری اسلامی ایران (محاسبه گر تورم). </a>
+					
+					
+				</ul>
+					<ul class="w3-pale-red">
+					
+					<a href=" # "> بیمه کار آفرین  </a>
+					
+					
+				</ul>
+					<ul class="w3-pale-yellow">
+					
+					<a href=" # "> بانکها </a>
+					
+				</ul>
+			  </div>
+			</div>
+			 <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">نمایندگان</button>
+			  <button class="btn w3-green w3-card-4 ">admin-2</button>
+			 <div class="offcanvas offcanvas-top w3-teal" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+				  <div class="offcanvas-header ">
+					<h5 id="offcanvasTopLabel">نمایندگان</h5>
+					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+									
+									<div class="w3-container">
+									
+									  <button onclick="document.getElementById('thran').style.display='block'" class="w3-button w3-black">تهران</button>
+
+									  <div id="thran" class="w3-modal">
+										<div class="w3-modal-content ">
+										  <div class="w3-container w3-pale-red">
+											<span onclick="document.getElementById('thran').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+											<p>تهران.</p>
+											<p>تلفن-021-88880292</p>
+											<p>فاکس021-88881599</p>
+											<p>خیابان نلسون ماندلا،خ وحید دستگردی،(ظفر)،تقاطع ولیعصر(عج)،پلاک341</p>
+											<p>کدپستی 1968617614</p>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									
+									<div class="w3-container">
+									
+									  <button onclick="document.getElementById(' rsht ').style.display='block'" class="w3-button w3-black"> رشت </button>
+
+									  <div id=" rsht " class="w3-modal">
+										<div class="w3-modal-content">
+										  <div class="w3-container ">
+											<span onclick="document.getElementById(' rsht ').style.display='none'" class="w3-button w3-display-topright">&times;</span>									
+											<img src="img-expert\rasht.jpg"style="max-width:100%;">
+											
+										  </div>
+										</div>
+									  </div>
+								</div>
+								<div class="w3-container">
+									
+									  <button onclick="document.getElementById(' sheraz ').style.display='block'" class="w3-button w3-black"> شیراز </button>
+
+									  <div id=" sheraz " class="w3-modal">
+										<div class="w3-modal-content">
+										  <div class="w3-container ">
+											<span onclick="document.getElementById(' sheraz ').style.display='none'" class="w3-button w3-display-topright">&times;</span>									
+											<img src="img-expert\sheraz.jpg"style="max-width:100%;">
+											
+										  </div>
+										</div>
+									  </div>
+								</div>
+								<div class="w3-container">
+									
+									  <button onclick="document.getElementById(' kermanshah ').style.display='block'" class="w3-button w3-black"> کرمانشاه </button>
+
+									  <div id=" kermanshah " class="w3-modal">
+										<div class="w3-modal-content">
+										  <div class="w3-container">
+											<span onclick="document.getElementById(' kermanshah ').style.display='none'" class="w3-button w3-display-topright">&times;</span>									
+											<img src="img-expert\kermanshah.png"style="max-width:100%;">
+											
+											
+											
+										  </div>
+										</div>
+									  </div>
+								</div>
+								<div class="w3-container">
+									
+									  <button onclick="document.getElementById(' qom ').style.display='block'" class="w3-button w3-black"> قم </button>
+
+									  <div id=" qom " class="w3-modal">
+										<div class="w3-modal-content">
+										  <div class="w3-container">
+											<span onclick="document.getElementById(' qom ').style.display='none'" class="w3-button w3-display-topright">&times;</span>									
+											<img src="img-expert\Qom.jpg"style="max-width:100%;">
+											
+											
+											
+										  </div>
+										</div>
+									  </div>
+								</div>
+								<div class="w3-container">
+									
+									  <button onclick="document.getElementById(' esfahan ').style.display='block'" class="w3-button w3-black"> اصفهان </button>
+
+									  <div id=" esfahan " class="w3-modal">
+										<div class="w3-modal-content">
+										  <div class="w3-container w3-pale-red">
+											<span onclick="document.getElementById(' esfahan ').style.display='none'" class="w3-button w3-display-topright">&times;</span>									
+											<p> اصفهان </p>
+											<p>09131143098</p>
+											<p> اصفهان ،محتشم کاشانی ،بعد از دفتر بیمه توسعه ،روبروی آزانس مسافرتی نقش جهان، ساختمان امین 3طبقه اول واحد 2 </p>
+											<p> اصفهان </p>
+											
+										  </div>
+										</div>
+									  </div>
+								</div>
+								<div class="w3-container">
+									
+									  <button onclick="document.getElementById(' mshhad ').style.display='block'" class="w3-button w3-black"> مشهد </button>
+
+									  <div id=" mshhad " class="w3-modal">
+										<div class="w3-modal-content">
+										  <div class="w3-container">
+											<span onclick="document.getElementById(' mshhad ').style.display='none'" class="w3-button w3-display-topright">&times;</span>									
+											
+											<img src="img-expert\mashhad.jpg"style="max-width:100%;">
+											
+											
+											
+										  </div>
+										</div>
+									  </div>
+								</div>
+
+				  </div>
+				  
+			</div>
+  </div>
+ 
+
+
+
+
+
+  
+  
+  </div>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light	"style="direction:rtl">
+  <div class="container-fluid">
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse	w3-black" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active	w3-teal	" aria-current="page" href="index.html">صفحه اصلی</a>
+        <a class="nav-link w3-blue" href="motalbat.html">مطالبات</a>
+        <a class="nav-link w3-green" href="#">مالی</a>
+        <a class="nav-link disabled w3-red">غیر فعال</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--slider-->
+<div class="w3-content w3-section w3-black w3-card-4" style="max-width:83%;">
+ 
+
+  <img class="mySlides w3-animate-fading" src="img-slider/1.jpg" style="width:100%;max-height:200px;">
+  <img class="mySlides w3-animate-fading" src="img-slider/2.jpg" style="width:100%;max-height:200px;">
+  <img class="mySlides w3-animate-fading" src="img-slider/3.jpg" style="width:100%;max-height:200px;">
+  <img class="mySlides w3-animate-fading" src="img-slider/4.jpg" style="width:100%;max-height:200px;">
+</div>
+
+<!--page-->
+<div class="container w3-teal w3-card-4"style="direction:rtl;">
+	<a href="#"><img class="transition" src="img-user\tankhah.bmp"style="max-width:100px;height:100px;border-radius:100%;"></a>
+	<a href="#"><img class="transition" src="img-user\mamoret.jpg"style="max-width:100px;height:100px;border-radius:100%;"></a>
+	<a href="#"><img class="transition" src="img-user\edjuction.jpg"style="max-width:100px;height:100px;border-radius:100%;"></a>
+	<!--footer-->
+<div class="w3-container w3-teal w3-card-4"style="direction:ltr">
+	  <img class="#" src="img/instagram.jpg" style="width:50px;height:50px;border-radius:100%;">
+	  <img class="#" src="img/telgram.jpg" style="width:50px;height:50px;border-radius:100%;">
+	  <img class="#" src="img/linked.png" style="width:50px;height:50px;border-radius:100%;">
+	  <img class="#" src="img/twitter.jpg" style="width:50px;height:50px;border-radius:100%;">
+	  <img class="#" src="img/youtube.jpg" style="width:50px;height:50px;border-radius:100%;">
+	  <img class="#" src="img/github.png" style="width:50px;height:50px;border-radius:100%;">
+	  
+</div>
+ </div>
+<!--modal-task-header-tbl-work-->
+
+<div class="w3-container">
+  <div id="tbl-work" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('tbl-work').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>میز کار</h2>
+      </header>
+      <div class="w3-container">
+  
+			<ul class="w3-card-4 w3"style="list-style:none;">
+				<a href="\\fileserver\Departments\مالی و مطالبات کارواندیشه\مطالبات"><img class="w3-card-4  transition "style="border-radius:10px;" src="img/tbl-1.png"></a>
+				<a href="\\fileserver\Departments\مالی و مطالبات کارواندیشه\مطالبات\مطالبات فروش\مجوز تحویل صادره"><img class="w3-card-4  transition"style="border-radius:10px;" src="img/tbl-2.png"></a>
+				<a href="\\fileserver\Departments\مالی و مطالبات کارواندیشه\مطالبات\مطالبات فروش\OLD           98-12-06\فايلهاي نرخ ارز\table-arz.xls"><img class="w3-card-4 transition"style="border-radius:10px;" src="img/tbl-3.png"></a>
+				<a href="\\fileserver\Departments\مالی و مطالبات کارواندیشه\مطالبات\مطالبات فروش\جدول محاسبه جرائم"><img class="w3-card-4 transition" style="border-radius:10px;"src="img/tbl-4.png"></a>
+				<a href="\\fileserver\Departments\مالی و مطالبات کارواندیشه\مطالبات\مطالبات فروش\مطالبات\برگه موديان مالياتي\ارزش افزوده.pdf"><img class="w3-card-4 transition" style="border-radius:10px;"src="img/tbl-5.png"></a>
+			</ul>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>میز کار</p>
+      </footer>
+    </div>
+  </div>
+</div>
+<!--modal-task-header-expert-->
+<div class="w3-container">
+  <div id="expert" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('expert').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>کارشناسان</h2>
+      </header>
+      <div class="w3-container">
+        <p>کارشناسان</p>
+			<ul class="w3-card"style="list-style:none;">
+				<a href="D:\koa\php\project-1\username\login.html"><img src="img-user/4 saki.jpg"style="list-style:none;margin-left:50px;max-width:100px;border-radius:100%;"></a>
+				<a href="D:\koa\php\project-1\username\login.html"><img src="img-user/s.png"style="list-style:none;margin-left:50px;max-width:100px;border-radius:100%;"></a>
+				<a href="D:\koa\php\project-1\username\login.html"><img src="img-user/s.png"style="list-style:none;margin-left:50px;max-width:100px;border-radius:100%;"></a>
+				
+			</ul>
+			
+      </div>
+	  
+
+      <footer class="w3-container w3-teal">
+        <p>کارشناسان</p>
+      </footer>
+    </div>
+  </div>
+</div>
+<!--modal-task-header-conecfrinds-->
+<div class="w3-container">
+
+  <div id="conecfrinds" class="w3-modal">
+  
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+	
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('conecfrinds').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+
+        <h2>ارتباط با همکاران</h2>
+      </header>
+	  <!--filter-->
+      <div class="w3-container">
+       
+			<div class="w3-container">
+  
+
+  <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="myInput" onkeyup="myFunction()">
+
+  <table class="w3-table-all w3-margin-top" id="myTable">
+    <tr>
+      <th style="width:40%;">نام</th>
+      <th style="width:40%;">داخلی</th>
+      <th style="width:40%;">قسمت</th>
+    </tr>
+    <tr class="w3-pale-red">
+      <td> آقا خاکپور-بازرگانی </td>
+      <td> 110 </td>
+      <td>بخش بازرگانی</td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقا رحمتی-بازرگانی </td>
+      <td> 112 </td>
+      <td>بخش بازرگانی</td>
+    </tr>
+    <tr class="w3-pale-red">
+      <td> خانم فریدنی-بازرگانی </td>
+      <td> 114 </td>
+      <td>بخش بازرگانی</td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم صالح </td>
+      <td> 115 </td>
+      <td>بخش بازرگانی</td>
+    </tr>
+	<tr class="w3-pale-blue">
+      <td> خانم حمدالله زاده-روابط عمومی و تبلیغات </td>
+      <td> 755 </td>
+      <td> روابط عمومی و تبلیغات </td>
+    </tr>
+	<tr class="w3-pale-blue">
+      <td> خانم اقلیمیروابط عمومی و تبلیغات </td>
+      <td> 756 </td>
+      <td> روابط عمومی و تبلیغات </td>
+    </tr>
+	<tr class="w3-pale-green">
+      <td> آقای حسین دوست نکهبانی </td>
+      <td> 159 </td>
+      <td> نکهبانی </td>
+    </tr>
+	<tr class="w3-pale-green">
+      <td> قمری نکهبانی </td>
+      <td> 159 </td>
+      <td> نکهبانی </td>
+    </tr>
+	<tr class="w3-pale-green">
+      <td> احمدی نکهبانی </td>
+      <td> 159 </td>
+      <td> نکهبانی </td>
+    </tr>
+	<tr class="w3-red">
+      <td>آقای جلیل جوزی-خدمات </td>
+      <td> 815-814 </td>
+      <td> خدمات </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> تلفن شرکت-شماره های ضروری </td>
+      <td> 88880292 </td>
+      <td> شماره های ضروری </td>
+    </tr>
+	
+	<tr class="w3-pale-red">
+      <td>فکس شرکت </td>
+      <td> 88881599 </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> فکس شرکت </td>
+      <td> 88887293 </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>فکس شرکت </td>
+      <td> 88674676 </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>شماره ثبت </td>
+      <td> 47061 </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> سایت شرکت </td>
+      <td> www.ka ro a n d is h e h.c o m </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> کد پستی </td>
+      <td> 1968617614 </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>کداقتصادی </td>
+      <td> 411111444745 </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> شناسه ملی </td>
+      <td> 10100922802 </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>کد اقتصادی بین الملل </td>
+      <td> 411389695664 </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> شناسه بین الملل </td>
+      <td> 10103994889 </td>
+      <td>  شماره های ضروری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم عباسی-پزشکی دارویی </td>
+      <td> 201-202 </td>
+      <td> پزشکی دارویی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای دکتر کیوانی-پزشکی دارویی </td>
+      <td> 210 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>خانم دکتر شانی-پزشکی دارویی </td>
+      <td> 215 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای نوید صادقی-پزشکی دارویی </td>
+      <td> 214 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم دکتر فراهانی-پزشکی دارویی </td>
+      <td> 213 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای دکتر میلاد احمدی-پزشکی دارویی </td>
+      <td> 217 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم یکه پور-پزشکی دارویی </td>
+      <td> 212 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم خاموشی-پزشکی دارویی </td>
+      <td> 219 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم حسيني-پزشکی دارویی </td>
+      <td> 227 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقاي مهندس ملک شاهدهي-پزشکی دارویی </td>
+      <td> 224 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقاي دكتر سيف-پزشکی دارویی </td>
+      <td> 218 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم برات پور-پزشکی دارویی </td>
+      <td> 208 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> سحر ناخدا-پزشکی دارویی </td>
+      <td> 209 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقاي مهندس عشقيان-پزشکی دارویی </td>
+      <td> 221 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>خانم عامری-پزشکی دارویی </td>
+      <td> 223 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای شرین پور-پزشکی دارویی </td>
+      <td> 111 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>آقای مجلسی-پزشکی دارویی </td>
+      <td> 2237 </td>
+      <td> پزشکی دارویی  </td>
+    </tr>
+	
+	<tr class="w3-pale-red">
+      <td> آقای احمدی-همودیالیز</td>
+      <td> 525 </td>
+      <td> همودیالیز </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای سفیدی-همودیالیز </td>
+      <td> 253 </td>
+      <td> همودیالیز </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای گل آرا-همودیالیز </td>
+      <td> 255 </td>
+      <td> همودیالیز </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای عباسی-همودیالیز</td>
+      <td> 254 </td>
+      <td> همودیالیز </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم دکتر اصلانی-هموفیلی و بیهوشی </td>
+      <td> 206 </td>
+      <td> هموفیلی و بیهوشی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای شیرازی-هموفیلی و بیهوشی </td>
+      <td> 205 </td>
+      <td> هموفیلی و بیهوشی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم سارا غفاریان راد-هموفیلی و بیهوشی </td>
+      <td> 216 </td>
+      <td> هموفیلی و بیهوشی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم دلسوز بحری-هموفیلی و بیهوشی </td>
+      <td> 211 </td>
+      <td> هموفیلی و بیهوشی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> واحد فناوری اطلاعات </td>
+      <td> 240 </td>
+      <td> IT </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای مهندس سید حسینی-IT</td>
+      <td> 244 </td>
+      <td> IT </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقاي مهندس فنایي-IT </td>
+      <td> 241 </td>
+      <td> IT </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقاي مهندس رسولي-IT </td>
+      <td> 242 </td>
+      <td> IT </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم مهندس مددي-IT </td>
+      <td> 243 </td>
+      <td> IT </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم ناصري-منابع انسانی </td>
+      <td> 234 </td>
+      <td> منابع انسانی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقاي رضوي-منابع انسانی </td>
+      <td>  235-105 </td>
+      <td> منابع انسانی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم ميرزایي- دبيرخانه-منابع انسانی </td>
+      <td> 239-301 </td>
+      <td> منابع انسانی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>خانم رامفر-منابع انسانی </td>
+      <td> 232 </td>
+      <td> منابع انسانی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم مظفری-منابع انسانی </td>
+      <td> 318 </td>
+      <td> منابع انسانی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم سوگند رسولی نیا-منابع انسانی </td>
+      <td> 317 </td>
+      <td> منابع انسانی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم نوشین زرنگار-منابع انسانی </td>
+      <td> 319 </td>
+      <td> منابع انسانی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>آقای مهندس عامری-ماشین آلات وبسته بندی </td>
+      <td> 310 </td>
+      <td> ماشین آلات وبسته بندی </td>
+    </tr>
+	
+	<tr class="w3-pale-red">
+      <td>آقای مهندس معظمی-ماشین آلات وبسته بندی </td>
+      <td> 315 </td>
+      <td> ماشین آلات وبسته بندی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>آقای مهندس لیقوانی-ماشین آلات وبسته بندی </td>
+      <td> 314 </td>
+      <td> ماشین آلات وبسته بندی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای مهندس تنگستانی-ماشین آلات وبسته بندی </td>
+      <td> 316 </td>
+      <td> ماشین آلات وبسته بندی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای مهندس برکتی-مشاور مدیر عامل </td>
+      <td> 320 </td>
+      <td> مشاور مدیر عامل </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای رسولی نیا-مشاور مدیر عامل </td>
+      <td> 113 </td>
+      <td> مشاور مدیر عامل </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای مهندس دقیقی-مشاور مدیر عامل </td>
+      <td> 245 </td>
+      <td> مشاور مدیر عامل </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> اقای پژمان نوایی-مطالبات </td>
+      <td> 441 </td>
+      <td> مطالبات </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای ستارزاده-مطالبات </td>
+      <td> 443 </td>
+      <td> مطالبات </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای ساکی-مطالبات </td>
+      <td> 445 </td>
+      <td> مطالبات </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای مولانا-کارخانه و انبار </td>
+      <td> 610 </td>
+      <td> کارخانه و انبار </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای یوسفی-کارخانه و انبار  </td>
+      <td> 616 </td>
+      <td> کارخانه و انبار </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای اشجعی-کارخانه و انبار  </td>
+      <td> 611 </td>
+      <td> کارخانه و انبار </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای جعفری-کارخانه و انبار  </td>
+      <td> 612 </td>
+      <td> کارخانه و انبار </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای قلندری-کارخانه و انبار  </td>
+      <td> 615 </td>
+      <td> کارخانه و انبار </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> انتظامات-کارخانه و انبار </td>
+      <td> 36427686-619-618  </td>
+      <td> کارخانه و انبار </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> دفتر بیمه کارآفرین </td>
+      <td> 88799792 </td>
+      <td> بیمه کارآفرین </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> فروشگاه-اصفهان </td>
+      <td> 820 </td>
+      <td> نمایندگان اصفهان </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم مموئی-اصفهان </td>
+      <td> 830 </td>
+      <td> نمایندگان اصفهان  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای مهندس صادقی-اصفهان </td>
+      <td> 840 </td>
+      <td> نمایندگان اصفهان  </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> خانم خراسانی-تهویه مطبوع / فروش  </td>
+      <td> 401-402 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای مهندس مجللی-تهویه مطبوع / فروش </td>
+      <td> 410 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس تاجیک-تهویه مطبوع / فروش </td>
+      <td> 424 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم ماکدا خلیلیان-تهویه مطبوع / فروش </td>
+      <td> 449 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس علیمحمد مجللی-تهویه مطبوع / فروش </td>
+      <td> 414 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم ویدا زرنگار-تهویه مطبوع / فروش </td>
+      <td> 411 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس عابدینی-تهویه مطبوع / فروش </td>
+      <td> 419 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای پیرانی-تهویه مطبوع / فروش </td>
+      <td> 428 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای یوسفی-تهویه مطبوع / فروش </td>
+      <td> 413 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس تقی زاده-تهویه مطبوع / فروش </td>
+      <td> 331 </td>
+      <td> تهویه مطبوع / فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای زمانی فر-تهویه مطبوع/فروش -دایکین بین الملل </td>
+      <td> 340 </td>
+      <td> تهویه مطبوع/فروش -دایکین بین الملل </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای رازقی-تهویه مطبوع/فروش -دایکین بین الملل </td>
+      <td> 341 </td>
+      <td> تهویه مطبوع/فروش -دایکین بین الملل </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم شمشکی-تهویه مطبوع/فروش -دایکین بین الملل </td>
+      <td> 331 </td>
+      <td> تهویه مطبوع/فروش -دایکین بین الملل </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم مهمدس سروریان-تهویه مطبوع/فروش -دایکین بین الملل </td>
+      <td> 332 </td>
+      <td> تهویه مطبوع/فروش -دایکین بین الملل </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم صالح-تهویه مطبوع/فروش -دایکین بین الملل </td>
+      <td> 231 </td>
+      <td> تهویه مطبوع/فروش -دایکین بین الملل </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس رضایی-تهویه مطبوع/فروش -دایکین بین الملل </td>
+      <td> 416	 </td>
+      <td> تهویه مطبوع/فروش -دایکین بین الملل </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس قاسم خانی-تهویه مطبوع/فروش -دایکین بین الملل </td>
+      <td> 448 </td>
+      <td> تهویه مطبوع/فروش -دایکین بین الملل </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم کلابی-فنی </td>
+      <td> 701-702 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس مغازه ای-فنی  </td>
+      <td> 720 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای جوزی-فنی  </td>
+      <td> 716 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس رضا زاهد-فنی </td>
+      <td> 719 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مصطفی مولانا-فنی </td>
+      <td> 726 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای ضیا مولانا-فنی </td>
+      <td> 725 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس منصور مسلمی-فنی </td>
+      <td> 731 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مقدادی-فنی </td>
+      <td> 736 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس افتخاری-فنی </td>
+      <td> 427 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس روستایی-فنی </td>
+      <td> 412 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس تپه رشی-فنی </td>
+      <td> 415 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای علیرضا یوسفی-فنی </td>
+      <td> 722 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس عبدالهی-فنی </td>
+      <td> 723 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس فرهاد مرتضوی-فنی </td>
+      <td> 312 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس حمید رضا طاهری-فنی </td>
+      <td> 713 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس پیرایش-فنی </td>
+      <td> 429 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای صدری-فنی </td>
+      <td> 732 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای قاسمی بالا-فنی </td>
+      <td> 721 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس نوربخش-فنی </td>
+      <td> 711 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای تهرانی-فنی </td>
+      <td> 714 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس زمانی-فنی </td>
+      <td> 730 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای غنا-فنی </td>
+      <td> 728 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم بصام-فنی </td>
+      <td> 712 </td>
+      <td> فنی </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای یوسفی-riss </td>
+      <td> 727 </td>
+      <td> riss </td>
+    </tr><tr class="w3-pale-red">
+      <td> ********** </td>
+      <td> ********** </td>
+      <td> منشی طبق5 </td>
+    </tr><tr class="w3-pale-red">
+      <td> ********** </td>
+      <td> ********** </td>
+      <td> منشی طبق5 </td>
+    </tr><tr class="w3-pale-red">
+      <td> ********** </td>
+      <td> ********** </td>
+      <td> منشی طبق5 </td>
+    </tr><tr class="w3-pale-red">
+      <td> ********** </td>
+      <td> ********** </td>
+      <td> حسابداری </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای پیچکا-حسابداری </td>
+      <td> 540 </td>
+      <td> حسابداری </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم تولائی-حسابداری </td>
+      <td> 535 </td>
+      <td> حسابداری </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای افشین-حسابداری </td>
+      <td> 534 </td>
+      <td> حسابداری </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای سعید نیکان-حسابداری </td>
+      <td> 537 </td>
+      <td> حسابداری </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای محمد عامری-حسابداری </td>
+      <td> 536 </td>
+      <td> حسابداری </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم ترکاشوند-حسابداری </td>
+      <td> 543 </td>
+      <td> حسابداری </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم زاهد-حسابداری </td>
+      <td> 539 </td>
+      <td> حسابداری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td>خانم اخلاق دوست-حسابداری </td>
+      <td> 538 </td>
+      <td> حسابداری </td>
+    </tr>
+	<tr class="w3-pale-red">
+      <td> آقای مهندس تابع قانون-مدیریت عامل </td>
+      <td> 510 </td>
+      <td> مدیریت عامل </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس پرویسیان-مدیریت عامل </td>
+      <td> 450-710 </td>
+      <td> مدیریت </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس آرش تابع قانون-مدیریت عامل </td>
+      <td> 520 </td>
+      <td> مدیریت </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس احسان تابع قانون-مدیریت عامل </td>
+      <td> 420 </td>
+      <td> مدیریت </td>
+    </tr><tr class="w3-pale-red">
+      <td> خانم سارا تابع قانون-مدیریت </td>
+      <td> 433 </td>
+      <td> مدیریت </td>
+    </tr><tr class="w3-pale-red">
+      <td> بیگی-کارواندیشه مهرآیین </td>
+      <td> 801-854 </td>
+      <td> کارواندیشه مهرآیین </td>
+    </tr><tr class="w3-pale-red">
+      <td> احسان تابع قانون-مدیریت </td>
+      <td> 851 </td>
+      <td> مدیریت </td>
+    </tr><tr class="w3-pale-red">
+      <td> امیر ضیایی-مدیریت </td>
+      <td> 850 </td>
+      <td> مدیریت </td>
+    </tr><tr class="w3-pale-red">
+      <td> نیما پاینده مهر-فنی </td>
+      <td> 852 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای سعید بابالو-فنی </td>
+      <td> 872 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> آقای مهندس طورانی-فنی </td>
+      <td> 862 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> مجید نوایی-فنی </td>
+      <td> 873 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> محمد رضا نیسی-فنی </td>
+      <td> 875 </td>
+      <td> فنی </td>
+    </tr><tr class="w3-pale-red">
+      <td> ابوالفضل حمزه بیگی-فروش </td>
+      <td> 860 </td>
+      <td> فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> ریحانه منفرد-فروش </td>
+      <td> 864 </td>
+      <td> فروش </td>
+    </tr><tr class="w3-pale-red">
+      <td> ایما بیگی-اداری </td>
+      <td> 854 </td>
+      <td> اداری </td>
+    </tr><tr class="w3-pale-red">
+      <td> ابراهیمی-اداری </td>
+      <td> 870 </td>
+      <td> اداری </td>
+    </tr><tr class="w3-pale-red">
+      <td> پیمان محمد زاده-پزشکی </td>
+      <td> 890 </td>
+      <td> پزشکی </td>
+    </tr><tr class="w3-pale-red">
+      <td> زهراصفرپور-مالی </td>
+      <td> 881 </td>
+      <td> مالی </td>
+    </tr><tr class="w3-pale-red">
+      <td> سالن جلسات </td>
+      <td> 856 </td>
+      <td> سالن جلسات </td>
+    </tr><tr class="w3-pale-red">
+      <td> خط مستقیم </td>
+      <td> 22014950 </td>
+      <td> خط مستقیم </td>
+    </tr>
+</div>
+      </div>
+	  
+      <footer class="w3-container w3-teal">
+        <p>ارتباط با همکاران</p>
+      </footer>
+    </div>
+  </div>
+</div>  
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
