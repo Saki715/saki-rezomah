@@ -1,2 +1,2 @@
 # saki-rezomah
-stat push programm for git
+start push programm for git
